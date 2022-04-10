@@ -1,0 +1,222 @@
+
+body {
+	margin: 0;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+main {
+	margin: 15px;
+}
+
+input[type=text], input[type=date], input[type=password], input[type=number], select, textarea {
+	font-family: Arial;
+	font-size: 18px;
+}
+
+input[type=submit] {
+	background: #2196f3;
+	color: #FFFFFF;
+	padding: 8px;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	background: #1C85BB; 
+}
+
+input[type=submit]:active {
+	background: #85d2ff; 
+}
+
+input[type=submit]:disabled {
+	background: grey;
+}
+
+.headerBlock {
+	background: #2196f3; 
+	padding: 10px;
+	margin: 0;
+	color: #FFFFFF;
+	height: 45px;
+	font-size: 18px;
+	valign: centered;
+}
+
+.linkButton {
+	border: #FFFFFF;
+	background: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.linkButton:hover {
+	text-decoration: underline;
+}
+
+.linkButton:active {
+	background: #85d2ff; 
+}
+
+.tableInput {
+	width: 10px;
+	border: 0;
+}
+
+.tableInput:focus {
+	outline: none;
+}
+
+table {
+	border-spacing: 0;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+
+td, th {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3px 10px 3px 10px;
+}
+
+th {
+	background: #2196f3;
+	color: #FFF;
+}
+
+caption {
+	font-size: 22px;
+	height: 40px;
+}
+
+.vertical-text {
+	display: inline-block;
+	overflow: hidden;
+	width: 1.5em;
+}
+
+.vertical-text__inner {
+	display: inline-block;
+	white-space: nowrap;
+	line-height: 1.5;
+	transform: translate(0,100%) rotate(-90deg);
+	transform-origin: 0 0;
+}
+
+.vertical-text__inner:after {
+	content: "";
+	display: block;
+	margin: -1.5em 0 100%;
+}
+
+.scrollContainer {
+	max-width: 1240px;
+    overflow: auto;
+}
+
+.tableButton {
+	padding: 0;
+}
+
+.iconButton {
+	background: white;
+	border: none;
+	padding: 3px 3px 1px 3px;
+}
+
+.iconButton:hover {
+	background: #1C85BB;
+}
+
+.iconButton:active {
+	background: #85d2ff;
+}
+
+.iconbutton:disabled {
+	background: gray;
+}
+
+.mainGrid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 30px;
+}
+
+.gridMenuTeacher {
+	display: grid;
+	grid-template-rows: repeat(5, auto) 1fr;
+}
+
+.gridMenuStudentCourses {
+	display: grid;
+	grid-template-rows: repeat(2, auto) 1fr;
+}
+
+.gridMenuStudentCourse {
+	display: grid;
+	grid-template-rows: repeat(4, auto) 1fr;
+}
+
+.gridMenuTeacher input, .gridMenuStudentCourses input, .gridMenuStudentCourse input {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 2px solid #3300CC;
+	border-radius: 0;
+}
+
+.gridMenuTeacher input.firstMenuItem, .gridMenuStudentCourses input.firstMenuItem, .gridMenuStudentCourse input.firstMenuItem {
+	border-radius: 5px 5px 0 0;
+}
+
+.gridMenuTeacher input.lastMenuItem, .gridMenuStudentCourses input.lastMenuItem, .gridMenuStudentCourse input.lastMenuItem {
+	border-bottom: 0;
+	border-radius: 0 0 5px 5px;
+}
+
+.gridMenuTeacher input:hover, .gridMenuStudentCourses input:hover, .gridMenuStudentCourse input:hover {
+	background: #1C85BB;
+}
+
+.gridMenuTeacher input:active, .gridMenuStudentCourses input:active, .gridMenuStudentCourse input:active {
+	background: #85d2ff;
+}
+
+.gridMenuTeacher input:disabled, .gridMenuStudentCourses input:disabled, .gridMenuStudentCourse input:disabled {
+	background: grey;
+}
+
+.gridCourseInfo {
+	display: grid;
+	grid-template-columns: 500px 600px;
+	grid-template-rows: auto auto auto 100%;
+	column-gap: 15px;
+	row-gap: 15px;
+}
+
+.courseDescription {
+	grid-row: span 3;
+	text-align: justify;
+}
+
+.courseDescriptionStudent {
+	grid-row: span 4;
+	text-align: justify;
+}
+
+.courseName {
+	grid-column: span 2;
+}
+
+.linkButton.courseNameButton {
+	color: #270fa3;
+	padding: 0;
+	font-size: 18px;
+}
